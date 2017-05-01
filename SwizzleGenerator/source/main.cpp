@@ -133,9 +133,9 @@ void generateHeader(std::ofstream& h, int axisAmount, int outputAmount, std::str
 
 	h << "* " << "swizzles vector to " << b.c_str() << '\n';
 	h << "* " << '\n';
-	h << "* " << "@returns " << VECTOR_HEAD.c_str() << outputAmount  << VECTOR_END.c_str() << " - the swizzled vector" << '\n';
+	h << "* " << "@returns " << VECTOR_HEAD.c_str() << outputAmount  << VECTOR_END.c_str() << VECTOR_T_ADD.c_str() << " - the swizzled vector" << '\n';
 	h << "*/" << '\n';
-	h << DLL_MACRO.c_str() << " " << VECTOR_HEAD.c_str() << outputAmount << VECTOR_END.c_str() << " Get" << up.c_str() << "();" << '\n';
+	h << DLL_MACRO.c_str() << " " << VECTOR_HEAD.c_str() << outputAmount << VECTOR_END.c_str() << VECTOR_T_ADD.c_str() << " Get" << up.c_str() << "();" << '\n';
 }
 
 //2D swizzling generator
